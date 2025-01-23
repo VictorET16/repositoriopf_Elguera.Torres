@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PROYECTO_FINAL {
     public static void main(String[] args) {
         int vt1, vt2, vt3;
-        double sm, pt, c, sa;
+        double sm, pt, c, st, sa;
         String vendedor;
     Scanner lectura = new Scanner (System.in);
     System.out. print ("Nombre del vendedor: ");
@@ -19,9 +19,11 @@ public class PROYECTO_FINAL {
     vt3 = lectura.nextInt();
     c= (vt1+vt2+vt3)* 0.10;
     pt=sm+c;
+    st=pt*3;
     sa= pt*12;
     System.out. println ("La comision de la venta es:        "+c);
     System.out. println ("El sueldo mensual del vendedor es: "+pt);
+    System.out. println ("El sueldo Trimestral del vendedor es: "+st);
     System.out. println ("El sueldo anual del vendedor es:   "+sa);
        }
 }
